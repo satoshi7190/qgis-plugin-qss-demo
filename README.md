@@ -12,17 +12,12 @@ A QGIS plugin demonstrating Qt Style Sheets (QSS) customization.
 
 ### Material Design Icons
 
-- **Source**: [Material Design Icons](https://github.com/google/material-design-icons)
-- **License**: Apache 2.0 - [Full License](LICENSE-ICONS.txt)
+- **License**: Apache 2.0
 - **Copyright**: Google LLC
+- **Source**: https://github.com/google/material-design-icons
 
 ### Images
 
 - **Source**: [Pixabay](https://pixabay.com)
-- **License**: Pixabay License
-- Images are used under Pixabay License, which allows free use without attribution.
-
-## Credits
-
-- Material Design Icons by Google
-- Images from Pixabay contributors
+- **License**: [Pixabay License](https://pixabay.com/service/license-summary/)
+- Attribution not required
