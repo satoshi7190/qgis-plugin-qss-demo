@@ -2,6 +2,8 @@
 
 A QGIS plugin demonstrating Qt Style Sheets (QSS) customization.
 
+![QSS Demo Plugin](image.png)
+
 ## License
 
 **GPL-2.0-or-later** - See [LICENSE](LICENSE)
