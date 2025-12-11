@@ -1,5 +1,5 @@
 [general]
-name=QSSDemoPlugin
+name=QSS Demo Plugin
 qgisMinimumVersion=3.0
 about=A simple demo showing how to style QGIS plugin UI with Qt Style Sheets (QSS).
 description=A simple demo showing how to style QGIS plugin UI with Qt Style Sheets (QSS).
