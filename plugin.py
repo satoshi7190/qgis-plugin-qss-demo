@@ -6,7 +6,7 @@ from qgis.PyQt.QtWidgets import QAction
 
 from .ui.dock import DockPanel
 
-PLUGIN_NAME = "QSS DEMO PLUGIN"
+PLUGIN_NAME = "QSS Demo Plugin"
 
 
 class Plugin:
