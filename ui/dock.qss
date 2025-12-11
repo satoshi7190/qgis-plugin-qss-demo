@@ -1,0 +1,602 @@
+* {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  spacing: 0px;
+  margin: 0px;
+  padding: 0;
+}
+
+QWidget#dockWidgetContents {
+  background-color: qlineargradient(
+    spread: repeat,
+    x1: 0,
+    y1: 0,
+    x2: 0,
+    y2: 1,
+    stop: 0 #002033,
+    stop: 0.6 #000000,
+    stop: 1 #000000
+  );
+}
+
+QFrame {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+/*-----QLabel-----*/
+
+/* 説明 */
+QLabel#description {
+  color: #f4f7f9;
+  font-size: 14px;
+  max-width: none;
+  max-height: 12px;
+  min-width: 400px;
+}
+
+/* --- QPushButton --- */
+QPushButton {
+  font-size: 14px;
+  padding: 12px;
+  border: none;
+  border-radius: 19px;
+}
+
+QPushButton[variant="primary"] {
+  background-color: #589632;
+  color: #f4f7f9;
+}
+
+QPushButton[variant="primary"]:hover {
+  background-color: #61a437;
+}
+
+QPushButton[variant="primary"]:pressed {
+  background-color: #457626;
+}
+
+QPushButton[variant="secondary"] {
+  background-color: #cf6910;
+  color: #f4f7f9;
+}
+
+QPushButton[variant="secondary"]:hover {
+  background-color: #e07520;
+}
+
+QPushButton[variant="secondary"]:pressed {
+  background-color: #8a3e08;
+}
+
+QPushButton[variant="tertiary"] {
+  background-color: #f4f7f9;
+  color: #1d1d1d;
+}
+
+QPushButton[variant="tertiary"]:hover {
+  background-color: #ffffff;
+}
+
+QPushButton[variant="tertiary"]:pressed {
+  background-color: #c7d1d7;
+}
+
+QPushButton[button="home"] {
+  background-image: url(./icons/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  border-radius: 12px;
+}
+
+QPushButton[button="headphones"] {
+  background-image: url(./icons/headphones.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  border-radius: 12px;
+}
+
+QPushButton[button="mic"] {
+  background-image: url(./icons/mic.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 35px;
+  min-width: 35px;
+  max-height: 35px;
+  min-height: 35px;
+  border-radius: 29px;
+}
+
+QPushButton[button="power"] {
+  background-image: url(./icons/power.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 35px;
+  min-width: 35px;
+  max-height: 35px;
+  min-height: 35px;
+  border-radius: 29px;
+}
+
+QPushButton[button="ok"] {
+  min-width: 80px;
+  max-width: 120px;
+
+  background-color: #589632;
+  color: #f4f7f9;
+}
+
+QPushButton[button="cancel"] {
+  max-width: 80px;
+}
+
+QPushButton[button="good"] {
+  background-image: url(./icons/thumb_up.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 50px;
+  max-width: 50px;
+}
+
+/* --- QLineEdit --- */
+QLineEdit {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f4f7f9;
+  color: #1d1d1d;
+}
+
+/* プレースホルダーのスタイル */
+QLineEdit[placeholderText] {
+  color: #5a5a5a; /* 薄いグレー */
+}
+
+/* フォーカス時 */
+QLineEdit:focus {
+  border: 2px solid #ee7913;
+  background-color: #f4f7f9;
+}
+
+/* --- QCheckBox --- */
+QCheckBox {
+  spacing: 10px;
+}
+
+QCheckBox#checkBox_1::indicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+}
+
+/* チェックあり状態 */
+QCheckBox#checkBox_1::indicator:checked {
+  background-color: #589632;
+  border: none;
+  image: url(./icons/check.svg);
+}
+
+/* チェックなし状態 */
+QCheckBox#checkBox_1::indicator:unchecked {
+  background-color: #f4f7f9;
+  image: none;
+}
+
+QCheckBox#checkBox_2::indicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+}
+
+/* チェックあり状態 */
+QCheckBox#checkBox_2::indicator:checked {
+  background-color: #e07520;
+  border: none;
+  image: url(./icons/check.svg);
+}
+
+/* チェックなし状態 */
+QCheckBox#checkBox_2::indicator:unchecked {
+  background-color: #f4f7f9;
+  image: none;
+}
+
+QCheckBox#checkBox_3::indicator {
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+}
+
+/* オフ状態 */
+QCheckBox#checkBox_3::indicator:unchecked {
+  image: url(./icons/switch-off.svg);
+  border: none;
+}
+
+/* オン状態 */
+QCheckBox#checkBox_3::indicator:checked {
+  image: url(./icons/switch-on.svg);
+  border: none;
+}
+
+/* --- QRadioButton --- */
+
+#radioSection {
+  max-width: 400px;
+}
+
+QRadioButton {
+  background-color: #f4f7f9;
+  color: #1d1d1d;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  padding-left: 37px;
+}
+
+QRadioButton::indicator {
+  width: 0;
+  height: 0;
+}
+
+QRadioButton:checked {
+  background-color: #589632;
+  color: #f4f7f9;
+}
+
+QRadioButton:hover:!checked {
+  background-color: #f4f7f9;
+}
+
+/* 左端 */
+QRadioButton#radioButton_1 {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* 中央 */
+QRadioButton#radioButton_2 {
+  border-left: none;
+  border-right: 1px solid #589632;
+  border-left: 1px solid #589632;
+}
+
+/* 右端 */
+QRadioButton#radioButton_3 {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* --- QComboBox --- */
+
+QComboBox {
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  color: #f4f7f9;
+  border-radius: 19px;
+  background-color: #589632;
+}
+
+QComboBox::drop-down {
+  border: none;
+  min-width: 40px;
+  min-height: 30px;
+  border-radius: 16px;
+  background-color: #f4f7f9;
+  margin: 3px;
+}
+
+QComboBox::down-arrow {
+  image: url(./icons/keyboard_arrow_down.svg);
+  width: 30px;
+  height: 30px;
+}
+
+/* 選択中 */
+QComboBox:on {
+  background-color: #589632;
+}
+
+/* --- QSlider --- */
+
+QSlider {
+  min-height: 40px;
+}
+
+QSlider::groove:horizontal {
+  border: none;
+  height: 8px;
+  background: qlineargradient(
+    x1: 0,
+    y1: 0,
+    x2: 1,
+    y2: 0,
+    stop: 0 #589632 stop: 1 #93b024
+  );
+  border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+  background-color: #cdd1d4;
+  width: 20px;
+  height: 20px;
+  margin: -6px 0;
+  border-radius: 10px;
+}
+
+QSlider::sub-page:horizontal {
+  background: transparent;
+}
+
+QSlider::add-page:horizontal {
+  background: #adadad;
+  border-radius: 4px;
+}
+
+/* --- QScrollArea --- */
+QScrollArea {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+/* スクロールエリアの中身 */
+QScrollArea > QWidget {
+  background-color: transparent;
+}
+
+/* スクロールエリアのビューポート */
+QScrollArea QWidget#scrollAreaContents {
+  background-color: transparent;
+}
+
+/* --- QScrollBar --- */
+
+/* 縦スクロールバー */
+QScrollBar:vertical {
+  background-color: transparent;
+  width: 6px;
+  border-radius: 3px;
+}
+
+/* スクロールバーのハンドル（つまみ） */
+QScrollBar::handle:vertical {
+  background-color: #ee7913;
+  border-radius: 3px;
+  min-height: 30px;
+}
+/* 上下の矢印ボタンを非表示 */
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+  height: 0px;
+  background: none;
+}
+
+/* スクロールバーの背景（ハンドル以外の部分） */
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+  background: none;
+}
+
+/* --- QSpinBox --- */
+
+QSpinBox {
+  color: #f4f7f9;
+  background-color: #34495e;
+  border-style: none;
+  width: 24px;
+  qproperty-alignment: AlignCenter; /* 文字の中央揃え */
+  height: 30px;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+QSpinBox::down-button,
+QSpinBox::up-button {
+  subcontrol-origin: margin;
+  background: #589632;
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+}
+
+QSpinBox::down-button {
+  subcontrol-position: center left;
+}
+
+QSpinBox::up-button {
+  subcontrol-position: center right;
+}
+
+QSpinBox::down-button,
+QSpinBox::up-button {
+  border-radius: 12px;
+}
+
+QSpinBox::up-arrow,
+QSpinBox::down-arrow {
+  subcontrol-origin: content;
+  width: 12px;
+  height: 12px;
+}
+QSpinBox::up-arrow {
+  image: url(./icons/add.svg);
+  width: 24px;
+  height: 24px;
+}
+QSpinBox::down-arrow {
+  image: url(./icons/remove.svg);
+  width: 24px;
+  height: 24px;
+}
+
+QProgressBar#progressBar1 {
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
+  background-color: #34495e;
+  text-align: center;
+  color: #ecf0f1;
+}
+
+QProgressBar#progressBar1::chunk {
+  background: qlineargradient(
+    x1: 0,
+    y1: 0,
+    x2: 1,
+    y2: 0,
+    stop: 0 #589632 stop: 1 #93b024
+  );
+  border-radius: 8px;
+  margin: 2px;
+}
+
+QStackedWidget {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- QTabWidget --- */
+QTabWidget {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+QTabWidget::pane {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+QTabBar::tab {
+  background-color: #1d1d1d;
+  color: #888;
+  padding: 10px 20px;
+  border: none;
+}
+
+QTabWidget::tab-bar {
+  alignment: center;
+}
+
+QTabBar::tab {
+  border-radius: 18px;
+}
+
+/* 最初のタブ */
+QTabBar::tab:first {
+  margin-right: 10px;
+}
+
+/* 最後のタブ */
+QTabBar::tab:last {
+  margin-left: 10px;
+}
+
+QTabBar::tab:selected {
+  background-color: #f4f7f9;
+  color: #101010;
+}
+
+QTabBar::tab:hover:!selected {
+  background-color: #333;
+  color: #f4f7f9;
+}
+
+/* --- QListWidget --- */
+QListWidget {
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+QListWidget::item {
+  color: #f4f7f9;
+  background-color: #2a3a4a;
+  padding: 12px;
+  border-radius: 25px;
+  margin: 5px 10px;
+}
+
+QListWidget::item:hover {
+  background-color: #2a3a4a;
+}
+
+QListWidget::item:selected {
+  background: qlineargradient(
+    x1: 0,
+    y1: 0,
+    x2: 1,
+    y2: 0,
+    stop: 0 #589632 stop: 1 #93b024
+  );
+  color: #f4f7f9;
+}
+
+QLabel[type="image"] {
+  border-radius: 10px;
+}
+
+QPushButton[button="prev"] {
+  background-image: url(./icons/chevron_backward.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 32px;
+  min-width: 32px;
+  max-height: 32px;
+  min-height: 32px;
+  border-radius: 8px;
+}
+
+QPushButton[button="next"] {
+  background-image: url(./icons/chevron_forward.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 32px;
+  min-width: 32px;
+  max-height: 32px;
+  min-height: 32px;
+  border-radius: 8px;
+}
+
+QPushButton[button="prev"]:hover {
+  margin-right: 10px;
+}
+
+QPushButton[button="next"]:hover {
+  margin-left: 10px;
+}
+
+QFrame[type="galleryNavFrame"] {
+  background-color: #2a3a4a;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+  border-radius: 28px;
+}
+
+QFrame[type="galleryNavFrame"] QLabel {
+  color: #f4f7f9;
+  qproperty-alignment: AlignCenter;
+  padding: 0px;
+  margin: 0px;
+}

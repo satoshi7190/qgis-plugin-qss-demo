@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>QssDemo</class>
+    <widget class="QDockWidget" name="QssDemo">
+        <!-- フローティング状態 -->
+        <!-- <property name="floating">
+            <bool>true</bool>
+        </property> -->
+
+        <!-- サイズ -->
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>450</width>
+                <height>500</height>
+            </rect>
+        </property>
+
+
+        <!-- 最小サイズ -->
+        <property name="minimumSize">
+            <size>
+                <width>450</width>
+                <height>100</height>
+            </size>
+        </property>
+        <!-- 最大サイズ -->
+        <property name="maximumSize">
+            <size>
+                <width>450</width>
+                <height>16777215</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>Qt Style Sheets Demo</string>
+        </property>
+
+        <widget class="QWidget" name="dockWidgetContents">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <property name="leftMargin">
+                    <number>0</number>
+                </property>
+                <property name="topMargin">
+                    <number>0</number>
+                </property>
+                <property name="rightMargin">
+                    <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>0</number>
+                </property>
+                <!-- ヘッダーセクション（ロゴ + 説明） -->
+                <item>
+                    <widget class="QFrame" name="headerSection">
+                        <property name="frameShape">
+                            <enum>QFrame::NoFrame</enum>
+                        </property>
+                        <layout class="QVBoxLayout" name="headerLayout">
+                            <property name="leftMargin">
+                                <number>0</number>
+                            </property>
+                            <property name="topMargin">
+                                <number>0</number>
+                            </property>
+                            <property name="rightMargin">
+                                <number>0</number>
+                            </property>
+                            <property name="bottomMargin">
+                                <number>0</number>
+                            </property>
+                            <property name="spacing">
+                                <number>0</number>
+                            </property>
+                        </layout>
+                    </widget>
+                </item>
+
+                <!-- タブウィジェット -->
+                <item>
+                    <widget class="QTabWidget" name="tabWidget">
+                        <property name="currentIndex">
+                            <number>0</number>
+                        </property>
+
+                        <widget class="QWidget" name="tab1">
+                            <attribute name="title">
+                                <string>Sample UI</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="tab1Layout">
+                                <property name="leftMargin">
+                                    <number>0</number>
+                                </property>
+                                <property name="topMargin">
+                                    <number>20</number>
+                                </property>
+                                <property name="rightMargin">
+                                    <number>0</number>
+                                </property>
+                                <property name="bottomMargin">
+                                    <number>0</number>
+                                </property>
+                                <property name="spacing">
+                                    <number>0</number>
+                                </property>
+                                <item>
+                                    <widget class="QScrollArea" name="scrollArea">
+                                        <property name="widgetResizable">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>QFrame::NoFrame</enum>
+                                        </property>
+                                        <widget class="QWidget" name="scrollAreaContents">
+                                            <layout class="QVBoxLayout" name="scrollLayout">
+                                                <property name="spacing">
+                                                    <number>0</number>
+                                                </property>
+                                                <property name="leftMargin">
+                                                    <number>0</number>
+                                                </property>
+                                                <property name="topMargin">
+                                                    <number>0</number>
+                                                </property>
+                                                <property name="rightMargin">
+                                                    <number>0</number>
+                                                </property>
+                                                <property name="bottomMargin">
+                                                    <number>0</number>
+                                                </property>
+
+                                                <!-- ボタンセクション -->
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="row">
+                                                        <property name="spacing">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="leftMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="topMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="rightMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="bottomMargin">
+                                                            <number>30</number>
+                                                        </property>
+                                                        <item>
+                                                            <spacer name="leftSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+
+                                                        <item>
+                                                            <layout class="QHBoxLayout"
+                                                                name="horizontalLayout_2">
+                                                                <property name="spacing">
+                                                                    <number>30</number>
+                                                                </property>
+                                                                <property name="leftMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="topMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="rightMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="bottomMargin">
+                                                                    <number>0</number>
+                                                                </property>
+
+                                                                <item>
+                                                                    <widget class="QPushButton"
+                                                                        name="homeButton">
+                                                                        <property name="variant"
+                                                                            stdset="0">
+                                                                            <string>primary</string>
+                                                                        </property>
+                                                                        <property name="button"
+                                                                            stdset="0">
+                                                                            <string>home</string>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                                <item>
+                                                                    <widget class="QPushButton"
+                                                                        name="headphonesButton">
+                                                                        <property name="variant"
+                                                                            stdset="0">
+                                                                            <string>secondary</string>
+                                                                        </property>
+                                                                        <property name="iconType"
+                                                                            stdset="0">
+                                                                            <string>headphones</string>
+                                                                        </property>
+                                                                        <property name="button"
+                                                                            stdset="0">
+                                                                            <string>headphones</string>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                                <item>
+                                                                    <widget class="QPushButton"
+                                                                        name="bookmarkButton">
+                                                                        <property name="variant"
+                                                                            stdset="0">
+                                                                            <string>primary</string>
+                                                                        </property>
+                                                                        <property name="button"
+                                                                            stdset="0">
+                                                                            <string>mic</string>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                                <item>
+                                                                    <widget class="QPushButton"
+                                                                        name="settingsButton">
+                                                                        <property name="variant"
+                                                                            stdset="0">
+                                                                            <string>secondary</string>
+                                                                        </property>
+                                                                        <property name="button"
+                                                                            stdset="0">
+                                                                            <string>power</string>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                            </layout>
+                                                        </item>
+                                                        <item>
+                                                            <spacer name="rightSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+
+                                                <!-- ボタンセクション -->
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="row">
+                                                        <property name="spacing">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="leftMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="topMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="rightMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="bottomMargin">
+                                                            <number>30</number>
+                                                        </property>
+                                                        <item>
+                                                            <spacer name="leftSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+
+                                                        <item>
+                                                            <layout class="QHBoxLayout"
+                                                                name="horizontalLayout_2">
+                                                                <property name="spacing">
+                                                                    <number>20</number>
+                                                                </property>
+                                                                <property name="leftMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="topMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="rightMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="bottomMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <item>
+                                                                    <widget class="QPushButton"
+                                                                        name="cancelButton">
+                                                                        <property name="text">
+                                                                            <string>Cancel</string>
+                                                                        </property>
+                                                                        <property name="variant"
+                                                                            stdset="0">
+                                                                            <string>tertiary</string>
+                                                                        </property>
+                                                                        <property name="button"
+                                                                            stdset="0">
+                                                                            <string>cancel</string>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                                <item>
+                                                                    <widget class="QPushButton"
+                                                                        name="okButton">
+                                                                        <property name="text">
+                                                                            <string>OK</string>
+                                                                        </property>
+                                                                        <property name="variant"
+                                                                            stdset="0">
+                                                                            <string>primary</string>
+                                                                        </property>
+                                                                        <property name="button"
+                                                                            stdset="0">
+                                                                            <string>ok</string>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                                <item>
+                                                                    <widget class="QPushButton"
+                                                                        name="goodButton">
+                                                                        <property name="variant"
+                                                                            stdset="0">
+                                                                            <string>secondary</string>
+                                                                        </property>
+                                                                        <property name="button"
+                                                                            stdset="0">
+                                                                            <string>good</string>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                            </layout>
+                                                        </item>
+                                                        <item>
+                                                            <spacer name="rightSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+
+                                                <!-- チェックボックスセクション -->
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="row">
+                                                        <property name="spacing">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="leftMargin">
+                                                            <number>10</number>
+                                                        </property>
+                                                        <property name="topMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="rightMargin">
+                                                            <number>10</number>
+                                                        </property>
+                                                        <property name="bottomMargin">
+                                                            <number>30</number>
+                                                        </property>
+                                                        <item>
+                                                            <spacer name="leftSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+                                                        <item>
+                                                            <layout class="QHBoxLayout"
+                                                                name="checkboxButtons">
+                                                                <item>
+                                                                    <widget class="QCheckBox"
+                                                                        name="checkBox_1">
+                                                                        <property name="text">
+                                                                            <string>Check</string>
+                                                                        </property>
+                                                                        <property name="checked">
+                                                                            <bool>true</bool>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                                <item>
+                                                                    <widget class="QCheckBox"
+                                                                        name="checkBox_2">
+                                                                        <property name="text">
+                                                                            <string>Check</string>
+                                                                        </property>
+                                                                        <property name="checked">
+                                                                            <bool>true</bool>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                                <item>
+                                                                    <widget class="QCheckBox"
+                                                                        name="checkBox_3">
+                                                                        <property name="text">
+                                                                            <string>Switch</string>
+                                                                        </property>
+                                                                        <property name="checked">
+                                                                            <bool>true</bool>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                            </layout>
+                                                        </item>
+                                                        <item>
+                                                            <spacer name="rightSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+
+
+                                                <!-- ラジオボタンセクション -->
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="row">
+                                                        <property name="spacing">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="leftMargin">
+                                                            <number>10</number>
+                                                        </property>
+                                                        <property name="topMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="rightMargin">
+                                                            <number>10</number>
+                                                        </property>
+                                                        <property name="bottomMargin">
+                                                            <number>30</number>
+                                                        </property>
+                                                        <item>
+                                                            <spacer name="leftSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+                                                        <item>
+                                                            <layout class="QHBoxLayout"
+                                                                name="radioButtons">
+                                                                <property name="spacing">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="leftMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="topMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="rightMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="bottomMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <item>
+                                                                    <widget class="QRadioButton"
+                                                                        name="radioButton_1">
+                                                                        <property name="text">
+                                                                            <string>SelectionA</string>
+                                                                        </property>
+                                                                        <property name="checked">
+                                                                            <bool>true</bool>
+
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                                <item>
+                                                                    <widget class="QRadioButton"
+                                                                        name="radioButton_2">
+                                                                        <property name="text">
+                                                                            <string>SelectionB</string>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                                <item>
+                                                                    <widget class="QRadioButton"
+                                                                        name="radioButton_3">
+                                                                        <property name="text">
+                                                                            <string>SelectionC</string>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                            </layout>
+                                                        </item>
+                                                        <item>
+                                                            <spacer name="rightSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+
+
+                                                <!-- スライダーセクション -->
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="row">
+                                                        <property name="spacing">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="leftMargin">
+                                                            <number>10</number>
+                                                        </property>
+                                                        <property name="topMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="rightMargin">
+                                                            <number>10</number>
+                                                        </property>
+                                                        <property name="bottomMargin">
+                                                            <number>30</number>
+                                                        </property>
+                                                        <item>
+                                                            <spacer name="leftSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+
+                                                        <item>
+                                                            <widget class="QSlider" name="slider1">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                                <property name="minimum">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="maximum">
+                                                                    <number>100</number>
+                                                                </property>
+                                                                <property name="value">
+                                                                    <number>70</number>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                        <item>
+                                                            <spacer name="rightSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+
+
+                                                <!-- コンボボックスセクション -->
+                                                <!-- QSpinBoxセクション -->
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="row">
+                                                        <property name="spacing">
+                                                            <number>20</number>
+                                                        </property>
+                                                        <property name="leftMargin">
+                                                            <number>10</number>
+                                                        </property>
+                                                        <property name="topMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="rightMargin">
+                                                            <number>10</number>
+                                                        </property>
+                                                        <property name="bottomMargin">
+                                                            <number>30</number>
+                                                        </property>
+                                                        <item>
+                                                            <spacer name="leftSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+
+
+                                                        <item>
+                                                            <widget class="QComboBox"
+                                                                name="comboBox">
+                                                                <item>
+                                                                    <property name="text">
+                                                                        <string>Option1</string>
+                                                                    </property>
+                                                                </item>
+                                                                <item>
+                                                                    <property name="text">
+                                                                        <string>Option2</string>
+                                                                    </property>
+                                                                </item>
+                                                                <item>
+                                                                    <property name="text">
+                                                                        <string>Option3</string>
+                                                                    </property>
+                                                                </item>
+                                                            </widget>
+                                                        </item>
+
+                                                        <item>
+                                                            <widget class="QSpinBox" name="spinBox">
+                                                            </widget>
+                                                        </item>
+                                                        <item>
+                                                            <spacer name="rightSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+
+                                                <!-- テキスト入力セクション -->
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="row">
+                                                        <property name="spacing">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="leftMargin">
+                                                            <number>10</number>
+                                                        </property>
+                                                        <property name="topMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="rightMargin">
+                                                            <number>10</number>
+                                                        </property>
+                                                        <property name="bottomMargin">
+                                                            <number>30</number>
+                                                        </property>
+                                                        <item>
+                                                            <spacer name="leftSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+                                                        <item>
+                                                            <widget class="QLineEdit"
+                                                                name="textform">
+                                                                <property name="text">
+                                                                    <string>Initial text</string>
+                                                                </property>
+                                                                <property name="placeholderText">
+                                                                    <string>Enter text here</string>
+                                                                </property>
+
+                                                            </widget>
+                                                        </item>
+                                                        <item>
+                                                            <spacer name="rightSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+
+
+                                                <!-- QProgressBar -->
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="row">
+                                                        <property name="spacing">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="leftMargin">
+                                                            <number>10</number>
+                                                        </property>
+                                                        <property name="topMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="rightMargin">
+                                                            <number>10</number>
+                                                        </property>
+                                                        <property name="bottomMargin">
+                                                            <number>30</number>
+                                                        </property>
+                                                        <item>
+                                                            <spacer name="leftSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+
+                                                        <item>
+                                                            <widget class="QProgressBar"
+                                                                name="progressBar1">
+
+                                                                <property name="value">
+                                                                    <number>72</number>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+
+                                                        <item>
+                                                            <spacer name="rightSpacer">
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </spacer>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+
+
+                                                <!-- スペーサー（コンテンツを上に寄せる） -->
+                                                <item>
+                                                    <spacer name="verticalSpacer">
+                                                        <property name="orientation">
+                                                            <enum>Qt::Vertical</enum>
+                                                        </property>
+                                                        <property name="sizeHint" stdset="0">
+                                                            <size>
+                                                                <width>20</width>
+                                                                <height>40</height>
+                                                            </size>
+                                                        </property>
+                                                    </spacer>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <!-- Tab 2 -->
+                        <widget class="QWidget" name="tab2">
+                            <attribute name="title">
+                                <string>List</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="tab2Layout">
+                                <property name="spacing">
+                                    <number>0</number>
+                                </property>
+                                <property name="leftMargin">
+                                    <number>0</number>
+                                </property>
+                                <property name="topMargin">
+                                    <number>20</number>
+                                </property>
+                                <property name="rightMargin">
+                                    <number>0</number>
+                                </property>
+                                <property name="bottomMargin">
+                                    <number>0</number>
+                                </property>
+                                <item>
+                                    <widget class="QListWidget" name="listWidget">
+                                        <property name="currentRow">
+                                            <number>0</number>
+                                        </property>
+                                        <item>
+                                            <property name="text">
+                                                <string>Home</string>
+                                            </property>
+                                            <property name="icon">
+                                                <iconset>
+                                                    <normaloff>icons/home.svg</normaloff>
+                                                </iconset>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Music</string>
+                                            </property>
+                                            <property name="icon">
+                                                <iconset>
+                                                    <normaloff>icons/headphones.svg</normaloff>
+                                                </iconset>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>BookMark</string>
+                                            </property>
+                                            <property name="icon">
+                                                <iconset>
+                                                    <normaloff>icons/bookmark.svg</normaloff>
+                                                </iconset>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Favorite</string>
+                                            </property>
+                                            <property name="icon">
+                                                <iconset>
+                                                    <normaloff>icons/favorite.svg</normaloff>
+                                                </iconset>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Schedule</string>
+                                            </property>
+                                            <property name="icon">
+                                                <iconset>
+                                                    <normaloff>icons/calendar.svg</normaloff>
+                                                </iconset>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Download</string>
+                                            </property>
+                                            <property name="icon">
+                                                <iconset>
+                                                    <normaloff>icons/download.svg</normaloff>
+                                                </iconset>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Location</string>
+                                            </property>
+                                            <property name="icon">
+                                                <iconset>
+                                                    <normaloff>icons/location.svg</normaloff>
+                                                </iconset>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Search</string>
+                                            </property>
+                                            <property name="icon">
+                                                <iconset>
+                                                    <normaloff>icons/search.svg</normaloff>
+                                                </iconset>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Account</string>
+                                            </property>
+                                            <property name="icon">
+                                                <iconset>
+                                                    <normaloff>icons/account_circle.svg</normaloff>
+                                                </iconset>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Settings</string>
+                                            </property>
+                                            <property name="icon">
+                                                <iconset>
+                                                    <normaloff>icons/settings.svg</normaloff>
+                                                </iconset>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Apps</string>
+                                            </property>
+                                            <property name="icon">
+                                                <iconset>
+                                                    <normaloff>icons/apps.svg</normaloff>
+                                                </iconset>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Information</string>
+                                            </property>
+                                            <property name="icon">
+                                                <iconset>
+                                                    <normaloff>icons/info.svg</normaloff>
+                                                </iconset>
+                                            </property>
+                                        </item>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+
+                        <!-- Tab 3: 画像ギャラリー -->
+                        <widget class="QWidget" name="tab3">
+                            <attribute name="title">
+                                <string>Gallery</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="tab3Layout">
+                                <property name="leftMargin">
+                                    <number>10</number>
+                                </property>
+                                <property name="topMargin">
+                                    <number>10</number>
+                                </property>
+                                <property name="rightMargin">
+                                    <number>10</number>
+                                </property>
+                                <property name="bottomMargin">
+                                    <number>10</number>
+                                </property>
+                                <property name="spacing">
+                                    <number>0</number>
+                                </property>
+
+                                <!-- 画像表示エリア (QStackedWidget) -->
+                                <item>
+                                    <widget class="QStackedWidget" name="imageStack">
+                                        <property name="currentIndex">
+                                            <number>0</number>
+                                        </property>
+
+                                        <!-- 画像1 -->
+                                        <widget class="QWidget" name="page1">
+                                            <layout class="QVBoxLayout" name="page1Layout">
+                                                <item>
+                                                    <widget class="QLabel" name="logoLabel">
+                                                        <property name="pixmap">
+                                                            <pixmap>imgs/bachalpsee-7572681_640.jpg</pixmap>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="type"
+                                                            stdset="0">
+                                                            <string>image</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+
+                                        <!-- 画像2 -->
+                                        <widget class="QWidget" name="page2">
+                                            <layout class="QVBoxLayout" name="page2Layout">
+                                                <item>
+                                                    <widget class="QLabel" name="logoLabel">
+                                                        <property name="pixmap">
+                                                            <pixmap>imgs/cats-8105667_640.jpg</pixmap>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="type"
+                                                            stdset="0">
+                                                            <string>image</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+
+                                        <!-- 画像3 -->
+                                        <widget class="QWidget" name="page3">
+                                            <layout class="QVBoxLayout" name="page3Layout">
+                                                <item>
+                                                    <widget class="QLabel" name="logoLabel">
+                                                        <property name="pixmap">
+                                                            <pixmap>imgs/computer-2565478_640.jpg</pixmap>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="type"
+                                                            stdset="0">
+                                                            <string>image</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+
+                                        <!-- 画像4 -->
+                                        <widget class="QWidget" name="page4">
+                                            <layout class="QVBoxLayout" name="page4Layout">
+                                                <item>
+                                                    <widget class="QLabel" name="logoLabel">
+                                                        <property name="pixmap">
+                                                            <pixmap>imgs/trees-975091_640.jpg</pixmap>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="type"
+                                                            stdset="0">
+                                                            <string>image</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+
+                                        <!-- 画像5 -->
+                                        <widget class="QWidget" name="page5">
+                                            <layout class="QVBoxLayout" name="page5Layout">
+                                                <item>
+                                                    <widget class="QLabel" name="logoLabel">
+                                                        <property name="pixmap">
+                                                            <pixmap>imgs/field-5429112_640.jpg</pixmap>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="type"
+                                                            stdset="0">
+                                                            <string>image</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                    </widget>
+                                </item>
+
+                                <!-- ナビゲーションボタン -->
+                                <item>
+                                    <widget class="QFrame" name="galleryNavFrame">
+                                        <property name="type"
+                                            stdset="0">
+                                            <string>galleryNavFrame</string>
+                                        </property>
+                                        <layout class="QHBoxLayout" name="galleryNavLayout">
+                                            <property name="leftMargin">
+                                                <number>0</number>
+                                            </property>
+                                            <property name="topMargin">
+                                                <number>0</number>
+                                            </property>
+                                            <property name="rightMargin">
+                                                <number>0</number>
+                                            </property>
+                                            <property name="bottomMargin">
+                                                <number>0</number>
+                                            </property>
+                                            <property name="spacing">
+                                                <number>0</number>
+                                            </property>
+
+                                            <item>
+                                                <spacer name="leftNavSpacer">
+                                                    <property name="orientation">
+                                                        <enum>Qt::Horizontal</enum>
+                                                    </property>
+                                                </spacer>
+                                            </item>
+                                            <item>
+                                                <widget class="QPushButton" name="prevButton">
+                                                    <property name="button"
+                                                        stdset="0">
+                                                        <string>prev</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QLabel" name="pageIndicator">
+                                                    <property name="text">
+                                                        <string>1 / 3</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QPushButton" name="nextButton">
+                                                    <property name="button"
+                                                        stdset="0">
+                                                        <string>next</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <spacer name="rightNavSpacer">
+                                                    <property name="orientation">
+                                                        <enum>Qt::Horizontal</enum>
+                                                    </property>
+                                                </spacer>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                </item>
+
+                                <!-- スペーサー（コンテンツを上に寄せる） -->
+                                <item>
+                                    <spacer name="verticalSpacer">
+                                        <property name="orientation">
+                                            <enum>Qt::Vertical</enum>
+                                        </property>
+                                        <property name="sizeHint" stdset="0">
+                                            <size>
+                                                <width>20</width>
+                                                <height>40</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                </item>
+                            </layout>
+                        </widget>
+
+                    </widget>
+                </item>
+
+            </layout>
+        </widget>
+    </widget>
+    <resources />
+    <connections />
+</ui>

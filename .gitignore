@@ -1,0 +1,15 @@
+__pycache__/
+.DS_Store
+.venv
+.vscode/*
+!.vscode/settings.json
+.pytest_cache
+coverage.xml
+.coverage
+requirements.txt
+poetry.lock
+.ruff_cache
+
+test.qss
+test.ui
+test.py

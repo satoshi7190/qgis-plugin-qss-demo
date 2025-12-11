@@ -1,0 +1,20 @@
+[general]
+name=QSS Demo Plugin
+qgisMinimumVersion=3.0
+about=A simple demo showing how to style QGIS plugin UI with Qt Style Sheets (QSS).
+description=A simple demo showing how to style QGIS plugin UI with Qt Style Sheets (QSS).
+# Version will be updated with release tag on Github workflow
+version={{PLUGIN_VERSION}}
+
+supportsQt6=True
+
+#Plugin main icon
+icon=imgs/icon.png
+
+author=Satoshi Komatsu
+email=
+homepage=
+tracker=
+repository=
+tags=ui,design,qss,stylesheet,demo
+category=Plugins
