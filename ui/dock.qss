@@ -131,7 +131,6 @@ QPushButton[button="power"] {
 QPushButton[button="ok"] {
   min-width: 80px;
   max-width: 120px;
-
   background-color: #589632;
   color: #f4f7f9;
 }

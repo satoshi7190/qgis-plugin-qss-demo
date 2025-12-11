@@ -53,7 +53,7 @@
                 <property name="spacing">
                     <number>0</number>
                 </property>
-                <!-- ヘッダーセクション（ロゴ + 説明） -->
+                <!-- ヘッダーセクション -->
                 <item>
                     <widget class="QFrame" name="headerSection">
                         <property name="frameShape">
@@ -419,7 +419,6 @@
                                                     </layout>
                                                 </item>
 
-
                                                 <!-- ラジオボタンセクション -->
                                                 <item>
                                                     <layout class="QHBoxLayout" name="row">
@@ -558,7 +557,6 @@
 
 
                                                 <!-- コンボボックスセクション -->
-                                                <!-- QSpinBoxセクション -->
                                                 <item>
                                                     <layout class="QHBoxLayout" name="row">
                                                         <property name="spacing">
@@ -583,7 +581,6 @@
                                                                 </property>
                                                             </spacer>
                                                         </item>
-
 
                                                         <item>
                                                             <widget class="QComboBox"
@@ -886,7 +883,7 @@
                             </layout>
                         </widget>
 
-                        <!-- Tab 3: 画像ギャラリー -->
+                        <!-- Tab 3 -->
                         <widget class="QWidget" name="tab3">
                             <attribute name="title">
                                 <string>Gallery</string>

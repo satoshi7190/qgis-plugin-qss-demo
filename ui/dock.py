@@ -47,7 +47,7 @@ class DockPanel(QDockWidget):
             print(f"UI file not found: {self.ui_path}")
 
     def reconnect_signals(self):
-        """UIリロード後にシグナルを再接続"""
+        # UIリロード後にシグナルを再接続
         # ギャラリーのナビゲーションボタン
         if hasattr(self, 'prevButton'):
             self.prevButton.clicked.connect(self.prev_image)
